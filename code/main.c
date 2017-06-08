@@ -31,7 +31,9 @@ void preenche_personagem(Tree* personagem){
 	printf("\n\n");
 
 	imprime_personagem_aleatorio();
-	
+
 	return 0;
 
 }
+
+//Teste aqui
