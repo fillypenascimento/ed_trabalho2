@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*
 void insere(Tree *personagem){
 
@@ -47,7 +47,6 @@ void insere(Tree *personagem){
         insere(personagem->right);
     }
 }
-*/
 
 void insere(Tree *nodo, Genetica *genetic){
 
@@ -63,25 +62,25 @@ void insere(Tree *nodo, Genetica *genetic){
     }
 
 }
-
-void preenche_carac(Tree *nodo, Genetica *g){
-
-
+*/
 
 
 void insere(Tree* nodo, Genetica* carac){
   char compara[20]="VAZIO\0";
-  
-  if(strcmp(nodo->info->carac,compara) && nodo->left != NULL && strcmp(nodo->left->info->carac,compara)){
+
+  if(strcmp(nodo->info->carac,compara) && nodo->left != NULL && strcmp(nodo->left->info->carac,compara))
     insere(nodo->left, carac);
-  }
-  else{
-    if(nodo->left == NULL && nodo->right == NULL){
+  else
+  {
+    if(nodo->left == NULL && nodo->right == NULL)
+    {
       nodo->info = carac;
       return;
     }
-    else{
-      if(!strcmp(nodo->left->info->carac,compara) && !strcmp(nodo->right->info->carac,compara)){
+    else
+    {
+      if(!strcmp(nodo->left->info->carac,compara) && !strcmp(nodo->right->info->carac,compara))
+      {
         nodo->info = carac;
         return;
       }
@@ -106,14 +105,12 @@ void preenche_personagem_inicial(Tree* personagem){
   Genetica* olhos_cor_2 = cria_cor_olhos();
   imprime_genetica(olhos_cor_2);
 
-  //Genetica* olhos_tipo_1 = cria_tipo_olhos();
-  //Genetica* olhos_tipo_2 = cria_tipo_olhos();
+  //Genetica* cria_tipo_olhos1 = cria_tipo_olhos();
+  //imprime_genetica(cria_tipo_olhos1);
+  //Genetica* cria_tipo_olhos2 = cria_tipo_olhos();
+  //imprime_genetica(cria_tipo_olhos2);
 
   preenche_olhos_cor(personagem, olhos_cor_1, olhos_cor_2);
-
-  preenche_olhos_tipo(personagem, olhos_tipo_1, olhos_tipo_2);
-
-
   //preenche_olhos_tipo(personagem, olhos_tipo_1, olhos_tipo_2);
 
 }

@@ -17,24 +17,7 @@ void preenche_personagem(Tree* personagem){
 }
 
 	/*
-	Lista *list = cria_lista();
-
-	for(int i = 1; i <= 4; ++i)
-	{
-		Tree* personagem = cria_arvore_personagem(i);
-		//chamada de funcao/funcoes de inserção de caracteristicas
-		insere_lista(list,i-1,personagem);
-	}
-	*/
-	Genetica *g;
-	Tree* personagem = cria_arvore_personagem(0);
-
-	printf("%s\n",personagem->left->left->left->info->carac);
-	printf("%s\n",personagem->left->left->left->right->info->carac);
-	/*
 	imprime_arvore(personagem1);
-
-
 
 	/*Criamos uma arvore de personagem para testes */
 	/*Lembre-se que ela recebe o id do personagem */
@@ -48,8 +31,7 @@ void preenche_personagem(Tree* personagem){
 	printf("\n\n");
 
 	imprime_personagem_aleatorio();
-
-	*/
+	
 	return 0;
 
 }
