@@ -71,6 +71,7 @@ void preenche_carac(Tree *nodo, Genetica *g){
 
 void insere(Tree* nodo, Genetica* carac){
   char compara[20]="VAZIO\0";
+  
   if(strcmp(nodo->info->carac,compara) && nodo->left != NULL && strcmp(nodo->left->info->carac,compara)){
     insere(nodo->left, carac);
   }
