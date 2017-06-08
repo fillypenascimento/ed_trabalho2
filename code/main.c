@@ -1,15 +1,20 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<time.h>
-#include"printPersonagem.h"
-#include"arvore.h"
-#include"criador.h"
-#include"lista.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include "printPersonagem.h"
+#include "arvore.h"
+#include "criador.h"
+#include "lista.h"
+#include "preenchimento.h"
+
 
 //oi
-int main()
-{
+
+void preenche_personagem(Tree* personagem){
+	int i=1;
+}
 
 	/*
 	Lista *list = cria_lista();
@@ -29,13 +34,13 @@ int main()
 	/*
 	imprime_arvore(personagem1);
 
+
 	printf("\nO personagem impresso graficamente nao corresponde ao personagem vazio impresso de forma textual");
 	printf("\n\n");
 
-
-	//Caso queira testar a biblioteca grafica
 	imprime_personagem_aleatorio();
-	*/
 
+	*/
 	return 0;
+
 }
